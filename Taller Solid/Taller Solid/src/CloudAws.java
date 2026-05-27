@@ -1,6 +1,6 @@
-public class CloudAws implements CloudServicePlatform{
+public class CloudAws implements CloudProvider{
     @Override
-    public void hostingTo(AppWeb app){
+    public void host(AppWeb app){
         System.out.println("Connect to AWS");
     }
     

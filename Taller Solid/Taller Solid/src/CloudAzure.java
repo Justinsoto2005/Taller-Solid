@@ -1,6 +1,6 @@
-public class CloudAzure implements CloudServicePlatform{
+public class CloudAzure implements CloudProvider{
     @Override
-    public void hostingTo(AppWeb app){
+    public void host(AppWeb app){
         System.out.println("Connect to Microsoft Azure");
     }
 }

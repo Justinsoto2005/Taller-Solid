@@ -1,4 +1,11 @@
-public interface CloudServicePlatform{
-    public void hostingTo (AppWeb app);
-    //More Methods
+public class CloudServicePlatform{
+    private CloudProvider provider;
+
+    public CloudServicePlatform(CloudProvider provider){
+        this.provider = provider;
+    }
+
+    public void hostingTo(AppWeb app){
+        provider.host(app);
+    }
 }
